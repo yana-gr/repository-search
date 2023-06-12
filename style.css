@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("assets/fonts/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("assets/fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/TTLakes-Regular.woff") format("woff"),
+    url("assets/fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: "TT Lakes", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 92%;
+}
+
+.header {
+  background-color: #f8f8f8;
+  z-index: 50;
+}
+
+.header__label {
+  width: 200px;
+  margin-bottom: 16px;
+}
+
+.repositories__input {
+  padding: 8px;
+  font: inherit;
+  font-size: 16px;
+  font-style: normal;
+  border-radius: 8px;
+  width: 350px;
+  resize: none;
+}
+
+.repositories__input:focus {
+  box-shadow: 0 0 5px 5px #64add4;
+}
+
+.repositories__match__item {
+  list-style: none;
+  background-color: white;
+  border: 1px solid rgb(148, 146, 146);
+  border-radius: 8px;
+  padding: 10px;
+  width: 350px;
+}
+
+.repositories__match__item:hover {
+  background-color: #8abbd5;
+}
+
+.repositories__choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  position: fixed;
+  top: 400px;
+}
+
+.repositories__choice__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+  background-color: #a6d1e8;
+  border: 1px solid rgb(148, 146, 146);
+  border-radius: 8px;
+  padding: 10px;
+  width: 350px;
+  min-height: 70px;
+}
+
+button {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
