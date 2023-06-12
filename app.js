@@ -13,7 +13,7 @@ matchList.addEventListener("click", function (event) {
 choiceList.addEventListener("click", function (event) {
   let target = event.target;
   if (!target.classList.contains("repositories__choice__btn")) return;
-  target.parentElement.remove();
+  target.parentElement.parentElement.remove();
 });
 
 function addChosen(target) {
@@ -25,7 +25,7 @@ function addChosen(target) {
     "beforeend",
     `<li class="repositories__choice__item">Name: ${name}<br>Owner: ${owner}<br>Stars: ${stars}
     <button class="repositories__choice__btn">
-    <img src="./assets/img/close_btn.png" alt="close-btn" /></button></li>`
+    <img class="repositories__choice__btn" src="./assets/img/close_btn.png" alt="close-btn" /></button></li>`
   );
 }
 
